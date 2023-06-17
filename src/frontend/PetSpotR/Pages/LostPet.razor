@@ -48,6 +48,33 @@
                 </label>
             </div>
         </div>
+     </div>
+        <!-- Step 2.5 - pet's last location h2 element followed by a dropdown -->
+        <h2>Step 2.5: Where was your pet last seen?</h2>
+        <!-- Dropdown menu with 10 locations in Hong Kong -->
+        <div class="form-group row justify-content-center">
+            <label for="petLocation" class="col-2 col-form-label">Location</label>
+            <div class="col-4">
+                <InputSelect id="location" @bind-Value="petModel.Location">
+                    <option>Central and Western</option>
+                    <option>Eastern</option>
+                    <option>Southern</option>
+                    <option>Wan Chai</option>
+                    <option>Sham Shui Po</option>
+                    <option>Kowloon City</option>
+                    <option>Kwun Tong</option>
+                    <option>Wong Tai Sin</option>
+                    <option>Yau Tsim Mong</option>
+                    <option>Islands</option>
+                    <option>Kwai Tsing</option>
+                    <option>North</option>
+                    <option>Sai Kung</option>
+                    <option>Sha Tin</option>
+                    <option>Tai Po</option>
+                    <option>Tsuen Wan</option>
+                    <option>Tuen Mun</option>
+                    <option>Yuen Long</option>
+                </InputSelect>
         @if (isLoading)
         {
             <p>Uploading...</p>
